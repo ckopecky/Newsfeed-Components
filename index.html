@@ -7,10 +7,11 @@
     <script src="./Menu/Menu.js" async></script>
     <script src="./Article/Article.js" async></script>
   </head>
-  <body>
+  <body onload=todayDate()>
     <div class="header">
       <img class="menu-button" src="./assets/menu.png"/>
       <h1>Lambda School Newsfeed</h1>
+      <span class="date"></span>
     </div>
     <div class="menu">
       <ul>
@@ -111,6 +112,35 @@
           hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
         <span class='expandButton'></span>
       </div>
+      <div class="article">
+          <h2>My Roommate Is My Cat</h2>
+          <p class="date">Nov 5th, 2018</p>
+  
+          <p>Cat ipsum dolor sit amet, siamese savannah or puma scottish fold. Persian bengal balinese . British shorthair mouser. Grimalkin savannah yet himalayan so bombay. Singapura ocicat yet scottish fold sphynx but havana brown. Sphynx. </p>
+  
+          <p>Scottish fold savannah lynx kitten bobcat. Cornish rex. Savannah thai tiger. Kitty singapura. Abyssinian bengal mouser so persian yet panther munchkin. Ocelot munchkin yet tomcat ragdoll but lion and mouser or turkish angora. Manx abyssinian yet balinese , or thai. Sphynx cheetah jaguar ragdoll yet birman. Singapura american shorthair. Norwegian forest norwegian forest norwegian forest for siberian munchkin. Cougar tiger. Norwegian forest cheetah bobcat yet egyptian mau, for havana brown, but singapura for lion. Russian blue scottish fold so tiger british shorthair so panther ocicat yet thai. Kitty lion egyptian mau tabby persian. Singapura egyptian mau lynx. Abyssinian manx yet tom and russian blue. Mouser ragdoll for kitten or tabby so malkin. Kitty savannah norwegian forest birman jaguar. </p>
+  
+          <p>American bobtail ragdoll and havana brown tiger yet siberian but sphynx so kitty. Maine coon norwegian forest for lynx yet bengal, kitten. Singapura ragdoll havana brown. Cheetah ragdoll yet munchkin grimalkin malkin. Lion lynx but tom jaguar siberian and birman. Havana brown tabby but balinese american shorthair or ocicat. Norwegian forest bengal or ocicat. Tomcat lynx, himalayan. Manx leopard or lion or cornish rex norwegian forest, and norwegian forest but american bobtail. Russian blue maine coon, or ocelot manx british shorthair burmese, abyssinian . Jaguar tom, puma and sphynx, so ocicat. Siamese cornish rex. Bobcat cornish rex or cheetah, and bobcat singapura. Birman munchkin or tom kitty, or manx for norwegian forest. American shorthair lion and american bobtail but siberian jaguar, and tom abyssinian . Savannah savannah so himalayan. 
+            </p>
+          <span class='expandButton'></span>
+        </div>
+        <div class="article">
+            <h2>Doctor Who Enters a New Era</h2>
+            <p class="date">May 5th, 2018</p>
+    
+            <p>Five foot one and crying - you never stood a chance. No. That is not the question. That is not where we start. So you've got a room for not being awake in. What's the point? You're just missing the room! That's a relief. I hate babysitters. Be a pal and tell me, Am I a good man? I'm Scottish. I can complain about things now. I can really complain about things now. Once upon a time. The end. Dad skills. The Doctor. Nosey parker. Well, I would say that that person would be an egomaniac, need, game-player sort of person. </p>
+    
+            <p>No, not the hugging. I'm against the hugging. The Doctor. Nosey parker. These are attack eyebrows. You could take bottle tops off with these. You realise one of us is lying about our basic programming. And I think we both know which one that is. That's a relief. I hate babysitters. Don't be lasagna. No. That is not the question. That is not where we start. Be a pal and tell me, Am I a good man? So you've got a room for not being awake in. What's the point? You're just missing the room! Old ladies die all the time. It's practically in the job description.</p>
+    
+            <p>Mortuaries and larders. Easiest things to break out of. Kidneys! I have kidneys. And I don't like the colour. I've made many mistakes... and it's about time that I did something about that. I don't know. But I'd probably blame the English. Well, I would say that that person would be an egomaniac, need, game-player sort of person. I just have one question… do you know how to fly this thing? He was dead already, I'm saving us. Follow me, and run! It’s a bit more exciting when you go the other way.</p>
+            <span class='expandButton'></span>
+          </div>
     </div>
   </body>
+  <script>
+    const todayDate = () => {
+      let date =  new Date;
+      document.querySelector('.date').textContent = date.toDateString();
+    }
+  </script>
 </html>
